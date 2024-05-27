@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraping App</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='sc.css') }}">
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>WEB SCRAPER </h1>
+
+    <form method="POST" action="/">
+        <label for="url">Enter URL</label>
+        <input type="text" id="url" name="url" required>
+
+        <br>
+
+
+
+        <input type="checkbox" id="extract_links" name="extract_links">
+        <label for="extract_links">Extract Links</label>
+
+        <input type="checkbox" id="extract_images" name="extract_images">
+        <label for="extract_images">Extract Images</label>
+
+        <br>
+        <input type="submit" value="Scrape">
+    </form>
+</body>
+</html>
